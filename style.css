@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: "Libre Franklin", sans-serif;
+    padding:0 20em;
+}
+.containner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+
+}
+.logos{
+    align-items: center;
+}
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.one{
+    text-align: center;
+    font-size: 26px;
+  
+}
+.can{
+    text-align: center;
+    font-size: 15px;
+  margin-bottom: 30px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    gap:15px;
+}
+.un {
+    width: 280px;
+    height: 40px;
+    border-radius: 1.5em;
+    border: 1px solid gray;
+    transition: .5s;
+    cursor: pointer;
+}
+.un:hover{
+    transform: scale(1.1);
+    border:1px solid blue;
+}
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 1.5em;
+    background: blue;
+    border:none;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    transform: scale(1.2);
+    background: black;
+}
+.img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.fin {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.socio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 940px){
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        gap:15px;
+    }
+    .img{
+        margin-top: 20px;
+        width: 700px;
+        height: 280px;
+    }
+    button {
+        width: 280px;
+        height: 40px;
+        border-radius: 1.5em;
+        background: blue;
+        border:none;
+        color: white;
+        font-size: 12px;
+    }
+
+}
